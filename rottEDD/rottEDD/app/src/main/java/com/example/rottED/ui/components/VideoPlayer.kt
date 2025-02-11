@@ -1,9 +1,8 @@
 package com.example.rottED.ui.components
 
 import android.content.Context
-import android.media.MediaPlayer
 import android.net.Uri
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
@@ -26,29 +25,6 @@ fun VideoPlayer(context: Context, videoUrl: String, isPlaying: Boolean  ) {
     LaunchedEffect(isPlaying) {
         exoPlayer.playWhenReady = isPlaying
     }
-
-    // MediaPlayer for Audio
-//    val mediaPlayer = remember { MediaPlayer() }
-//
-//    DisposableEffect(videoUrl) {
-//        mediaPlayer.reset() // Reset before setting new data
-//        mediaPlayer.setDataSource(context, Uri.parse(videoUrl)) // Set audio source
-//        mediaPlayer.prepareAsync() // Prepare asynchronously to prevent UI lag
-//
-//        mediaPlayer.setOnPreparedListener {
-//            it.start() // Start playing audio when ready
-//        }
-//
-//        mediaPlayer.setOnCompletionListener {
-//            it.seekTo(0) // Loop the audio
-//            it.start()
-//        }
-//
-//        onDispose {
-//            mediaPlayer.release() // Release MediaPlayer to prevent memory leaks
-//            exoPlayer.release()
-//        }
-//    }
 
     AndroidView(
         factory = { ctx ->
