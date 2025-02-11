@@ -14,11 +14,11 @@ import com.example.rottED.ui.components.VideoPlayer
 @Composable
 fun ReelsScreen(context: Context) {
     val videoList = listOf(
-        Video("1", "Reel 1", "https://www.devarshjoshi.com/demovid1.MP4"),
-        Video("2", "Reel 2", "https://www.devarshjoshi.com/demovid2.MP4"),
-        Video("3", "Reel 3", "https://www.devarshjoshi.com/video9.MP4"),
-        Video("4", "Reel 3", "https://www.devarshjoshi.com/demovid3.MP4"),
-        Video("5", "Reel 3", "https://www.devarshjoshi.com/demovid4.MP4"),
+        Video("1", "Reel 1", "https://www.devarshjoshi.com/1.mp4"),
+        Video("2", "Reel 2", "https://www.devarshjoshi.com/2.mp4"),
+        Video("3", "Reel 3", "https://www.devarshjoshi.com/3.mp4"),
+        Video("4", "Reel 3", "https://www.devarshjoshi.com/4.mp4"),
+        Video("5", "Reel 3", "https://www.devarshjoshi.com/5.mp4"),
         )
 
     val pagerState = rememberPagerState(pageCount = { videoList.size })
