@@ -48,6 +48,11 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.2.0")
     implementation("androidx.navigation:navigation-compose:2.7.5")
 
+    implementation("androidx.compose.material:material:1.5.1") // Ensure Material Components are added
+    implementation("androidx.compose.ui:ui:1.5.1") // Compose UI
+    implementation("androidx.compose.animation:animation:1.5.1") // Animation library
+    implementation("androidx.compose.material:material-icons-extended:1.5.1") // Material Icons
+
     // ✅ Jetpack Compose Foundation (Pager)
     implementation("androidx.compose.foundation:foundation:1.6.0")
 
